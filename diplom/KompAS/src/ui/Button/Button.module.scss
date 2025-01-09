@@ -1,0 +1,44 @@
+@import '/src/assets/variables.scss';
+@import '/src/assets/animate.scss';
+
+.button {
+  width: 100%;
+  box-shadow: 0 0 12px #5e5e5e;
+  border-radius: 3px;
+  transition: $transition-variable;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: $color-focused;
+    box-shadow: 0px 0 25px #fff;
+  }
+  > img{
+    margin-top: 3px;
+  }
+}
+
+.active {
+  background-color: $color-focused;
+  color: white;
+  &:hover{
+    color: white;
+  }
+}
+
+.large {
+  font-size: $font-size-description;
+  max-width: 300px;
+  min-height: 70px;
+}
+.normal {
+  font-size: $font-size-h4;
+  max-width: 190px;
+  min-height: 40px;
+}
+.small {
+  font-size: $font-size-button-small;
+  max-width: 100px;
+  min-height: 30px;
+}
